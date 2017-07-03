@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>aPCR primer decider</title>
+</head>
+<body>
+<form action="/cgi-bin/aPrimeDisplay.cgi" method="POST" enctype="multipart/form-data">
+Desired Scaffold Length: <input type="text" name="sLen" id="sLen"><br>
+Template material: 
+<select name="templT" id="templT">
+<option value="1">M13</option>
+<option value="2">Lambda</option>
+<option value="3">User defined</option>
+</select>
+<br>User template (only if user defined):<br>
+<textarea name="utempl" id="utempl" rows="10" cols="90"></textarea> 
+<br><input type="submit" value="Submit">
+</form>
+<br>
+<hr>
+<br>
+<h3>Validated primers</h3>
+<table border=1 cellpadding=4>
+<tr bgcolor="#00ff00">
+<th>Size</th><th>Forward primer (1 uM)</th><th>Reverse primer (20 nM)</th><th>Template</th>
+</tr>
+<tr>
+<td>449</td><td>GTCGTCGTCCCCTCAAACT</td><td>ATTAATGCCGGAGAGGGTAG</td><td>M13</td>
+</tr><tr>
+<td>522</td><td>GGACGCTATCCAGTCTAAACAT</td><td>GAAAGAGGACAGATGAACGGTG</td><td>M13</td>
+</tr><tr>
+<td>721</td><td>GTCGTCGTCCCCTCAAACT</td><td>GCTGAAAAGGTGGCATCAAT</td><td>M13</td>
+</tr><tr>
+<td>738</td><td>CTACCCTCGTTCCGATGCT</td><td>GTTAATGCCCCCTGCCTATT</td><td>M13</td>
+</tr><tr>
+<td>763</td><td>GAGCGCAACGCAATTAATGT</td><td>CAATCATATGTACCCCGGTTGA</td><td>M13</td>
+</tr><tr>
+<td>769</td><td>GTCGTCGTCCCCTCAAACT</td><td>GCTGAAAAGGTGGCATCAAT</td><td>M13</td>
+</tr><tr>
+<td>771</td><td>CGCTTTCTTCCCTTCCTTTCT</td><td>GGCGATTAAGTTGGGTAACGC</td><td>M13</td>
+</tr><tr>
+<td>1,000</td><td>GTCTCGCTGGTGAAAAGAAA</td><td>ATTAATGCCGGAGAGGGTAG</td><td>M13</td>
+</tr><tr>
+<td>1,018</td><td>TAATACGACTCACTATAGGTCTCGCTGGTGAAAAGAAA</td><td>ATTAATGCCGGAGAGGGTAG</td><td>M13</td>
+</tr><tr>
+<td>1,021</td><td>CTCGGTGGCCTCACTGATTAT</td><td>GCTGCAAGGCGATTAAGTTGG</td><td>M13</td>
+</tr><tr>
+<td>1,447</td><td>TGCCTCAACCTCCTGTCAAT</td><td>AGAGGCATTTTCGAGCCAGT</td><td>M13</td>
+</tr><tr>
+<td>1,521</td><td>GGGCTTGCTATCCCTGAAAAT</td><td>GACTTGCGGGAGGTTTTGAAG</td><td>M13</td>
+</tr><tr>
+<td>1,616</td><td>GCGACGATTTACAGAAGCAA</td><td>AAGGGCGAAAAACCGTCTAT</td><td>M13</td>
+</tr><tr>
+<td>2,022</td><td>GATGAGTGCGGTACTTGGTTTA</td><td>GCTTTGACGAGCACGTATAACG</td><td>M13</td>
+</tr><tr>
+<td>2,118</td><td>GCTCCTTCTGGTGGTTTCTT</td><td>TCTGGCCTTCCTGTAGCCA</td><td>M13</td>
+</tr><tr>
+<td>2,298</td><td>TACCCTCGTTCCGATGCT</td><td>GACGACAATAAACAACATGTTCAGCT</td><td>M13</td>
+</tr><tr>
+<td>2,521</td><td>CACGGTCGGTATTTCAAACCA</td><td>CCTCTTCGCTATTACGCCAGC</td><td>M13</td>
+</tr><tr>
+<td>2,805</td><td>GTCGTCGTCCCCTCAAACT</td><td>GTTAATGCCCCCTGCCTATT</td><td>M13</td>
+</tr><tr>
+<td>3,022</td><td>GCACTGACCCCGTTAAAACTTA</td><td>CAGATTCACCAGTCACACGACC</td><td>M13</td>
+</tr><tr>
+<td>3,281</td><td>TCTTTGCCTTGCCTGTATGA</td><td>GCTAACGAGCGTCTTTCCAG</td><td>M13</td>
+</tr><tr>
+<td>3,356</td><td>GTCTCGCTGGTGAAAAGAAA</td><td>GTTAATGCCCCCTGCCTATT</td><td>M13</td>
+</tr><tr>
+<td>4,427</td><td>TGTACTTTGTTTCGCGCTTG</td><td>AGGGAAGAAAGCGAAAGGAG</td><td>M13</td>
+</tr><tr>
+<td>5,032</td><td>TGCCTCAACCTCCTGTCAAT</td><td>GCTGAAAAGGTGGCATCAAT</td><td>M13</td>
+</tr><tr>
+<td>5,630</td><td>CTACCCTCGTTCCGATGCT</td><td>ATTAATGCCGGAGAGGGTAG</td><td>M13</td>
+</tr><tr>
+<td>10,000</td><td>CAGTGCAGTGCTTGATAACAGG</td><td>GTAGTGCGCGTTTGATTTCC</td><td>Lambda</td>
+</tr><tr>
+<td>10,033</td><td>GCGGTGATACGTGGTGTTT</td><td>CATAAACGGCAAGATGCGG</td><td>Lambda</td>
+</tr><tr>
+<td>11,927</td><td>CAGTGCAGTGCTTGATAACAGG</td><td>CCGAAGTCGAAATCAAGCTG</td><td>Lambda</td>
+</tr>
+</table>
+</body>
+</html>
